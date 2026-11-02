@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+PackageIdentifier: Desk1.Margin1
+PackageVersion: 0.1.2
+InstallerType: exe
+Scope: user
+InstallModes:
+- silent
+- silentWithProgress
+InstallerSwitches:
+  Silent: /S /product=margin1
+  SilentWithProgress: /S /product=margin1
+UpgradeBehavior: install
+ProductCode: Margin1
+AppsAndFeaturesEntries:
+- DisplayName: Margin1
+  Publisher: Brand Growth Advisory Pty Ltd
+  DisplayVersion: 0.1.2
+  ProductCode: Margin1
+  InstallerType: nullsoft
+Installers:
+- Architecture: x64
+  InstallerUrl: https://desk1.io/download/Desk1-Setup-2026.11.02.1.exe
+  InstallerSha256: EF874CD9B34D5D0E92CDB8658E183E6E89B112FCF1DF1EC9B83EC361245D2EBC
+ManifestType: installer
+ManifestVersion: 1.9.0
